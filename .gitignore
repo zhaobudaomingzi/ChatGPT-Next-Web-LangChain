@@ -47,6 +47,3 @@ dev
 
 /uploads
 .vercel
-
-# workflows
-/.github/workflows/sync.yml merge=ours
