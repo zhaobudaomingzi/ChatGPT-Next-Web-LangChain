@@ -30,6 +30,7 @@ jobs:
           target_repo_token: ${{ secrets.GITHUB_TOKEN }} # automatically generated, no need to set
           test_mode: false # Set test_mode true to run tests instead of the true action!!
           upstream_pull_args: '-s recursive -Xtheirs --allow-unrelated-histories'
+          target_branch_push_args: '--force'
 
       - name: Sync check
         if: failure()
